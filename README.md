@@ -1,45 +1,18 @@
-# regular-loader
+# mpregular-loader
 
 [![build status][build-status-image]][build-status-url]
 [![npm package][npm-package-image]][npm-package-url]
 [![license][license-image]][license-url]
 
-
-
 ## Installation
 
 ```bash
-# for webpack 2
-# WIP
-# for webpack 1
-npm install --save-dev regular-loader@0.1.5
+npm install mpregular-loader --save-dev
 ```
 
-## Example
+## Caveat
 
-webpack.config.js
-
-```js
-const ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
-
-module.exports = {
-    // ...
-    module: {
-      rules: [{
-        test: /\.rgl$/,
-        use: {
-          loader: 'regular-loader',
-          options: {
-            extractCSS: true
-          }
-        },
-      }]
-    },
-    plugins: [
-      new ExtractTextPlugin( 'app.css' )
-    ]
-};
-```
+Please use webpack 3+ with mpregular-loader
 
 ## Related
 
