@@ -23,7 +23,7 @@ module.exports = {
       {
         test: /\.rgl$/,
         use: {
-          loader: require.resolve( '../lib' ),
+          loader: require.resolve( '../../lib' ),
           options: {
             loaders: {
               css: ExtractTextPlugin.extract( {
@@ -47,7 +47,7 @@ module.exports = {
         use: [
           'babel-loader',
           {
-            loader: require.resolve( '../lib' ),
+            loader: require.resolve( '../../lib' ),
             options: {
               checkEntry: true
             }

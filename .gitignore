@@ -2,5 +2,5 @@
 node_modules
 npm-debug.log
 /__tests__/dist
-/demo/dist
+/examples/**/*/dist
 /lib/utils/.options-cache-*
