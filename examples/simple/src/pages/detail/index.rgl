@@ -20,8 +20,9 @@
 <script>
   import A from '@/src/pages/detail/a.rgl'
   import B from './b.rgl'
+  import Regular from 'regularjs'
 
-  export default {
+  const App = Regular.extend( {
     components: {
       A: A,
       B: B,
@@ -29,7 +30,9 @@
     config() {
       console.log( 'config' )
     }
-  }
+  } )
+
+  export default App
 </script>
 
 <style lang="less" scoped>
