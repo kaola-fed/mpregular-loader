@@ -1,5 +1,10 @@
 <template>
   <div>
+    {#list items as item}
+      {#list array as arr}
+        <div r-html="{ xyz + 'abc' }"></div>
+      {/list}
+    {/list}
     <A>
       <div>slot in a!!!</div>
       <B>
