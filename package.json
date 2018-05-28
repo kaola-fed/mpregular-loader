@@ -69,8 +69,8 @@
   },
   "peerDependencies": {
     "css-loader": "*",
-    "regularjs": "*",
-    "style-loader": "*"
+    "style-loader": "*",
+    "mpregular": "*"
   },
   "devDependencies": {
     "ava": "^0.25.0",
