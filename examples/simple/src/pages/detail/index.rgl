@@ -23,14 +23,14 @@
   import Regular from 'regularjs'
 
   const App = Regular.extend( {
-    components: {
-      A: A,
-      B: B,
-    },
+
     config() {
       console.log( 'config' )
     }
   } )
+
+  App.component( 'A', A )
+  App.component( 'B', B )
 
   export default App
 </script>
