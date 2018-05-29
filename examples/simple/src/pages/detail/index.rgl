@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div>{ 'foo' | thumbnail }</div>
     {#list items as item}
       {#list array as arr}
         <div>{ content | thumbnail: 1 | test }</div>
