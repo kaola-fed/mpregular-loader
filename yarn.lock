@@ -4302,9 +4302,9 @@ mixin-deep@^1.2.0:
   dependencies:
     minimist "0.0.8"
 
-mpregular-template-compiler@0.0.17:
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/mpregular-template-compiler/-/mpregular-template-compiler-0.0.17.tgz#0ea5099ea4c02fbf50a9464daf95792e5352b207"
+mpregular-template-compiler@0.0.18:
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/mpregular-template-compiler/-/mpregular-template-compiler-0.0.18.tgz#c7f58009d9f61e999b258e0696cace20235199d2"
   dependencies:
     lodash.clonedeep "^4.5.0"
     nanoid "^1.0.2"
