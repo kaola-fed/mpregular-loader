@@ -2,6 +2,7 @@
   <div>
     {#list items as item}
       {#list array as arr}
+        <div>{ content | thumbnail: 1 | test }</div>
         <div r-html="{ xyz + 'abc' }"></div>
       {/list}
     {/list}
@@ -31,6 +32,14 @@
 
   App.component( 'A', A )
   App.component( 'B', B )
+
+  App.filtr( 'thumbnail', ( v ) => {
+    return v + '?thumbnail'
+  } )
+
+  App.filtr( 'test', ( v ) => {
+    return v + '?test'
+  } )
 
   export default App
 </script>
