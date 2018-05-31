@@ -8,7 +8,7 @@
         <div r-html="{ xyz + 'abc' }"></div>
       {/list}
     {/list}
-    <A>
+    <A attr={ false }>
       <div>slot in a!!!</div>
       <B>
         <div>slot in b</div>
