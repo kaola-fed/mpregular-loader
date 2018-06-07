@@ -6,7 +6,7 @@ app.$inject()
 
 export default {
   config: {
-    pages: ['pages/logs/main', '^pages/index/main'],
+    pages: ['^pages/detail/index'],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',

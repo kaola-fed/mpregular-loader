@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>{ this.xyz( content, '123' ) }</div>
+    <div on-click="{ this.onClick('haha') }">{ this.xyz( content, '123' ) }</div>
     <div data-x="{ content1 | thumbnail } das { content2 | thumbnail } { content }">{ 'foo' | thumbnail }</div>
     {#list items as item}
       {#list array as arr}
