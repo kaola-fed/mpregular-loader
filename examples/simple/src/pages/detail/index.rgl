@@ -8,6 +8,9 @@
         <div r-html="{ xyz + 'abc' }"></div>
       {/list}
     {/list}
+    {#if test}
+    <div>test</div>
+    {/if}
     <A attr={ false }>
       <div>slot in a!!!</div>
       <B>
