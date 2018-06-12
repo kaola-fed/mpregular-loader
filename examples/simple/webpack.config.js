@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     'app': path.resolve( __dirname, 'src/index.js' ),
     'pages/detail/index': path.resolve( __dirname, 'src/pages/detail/index.js' ),
+    'pages/detail/index2': path.resolve( __dirname, 'src/pages/detail/index2.js' ),
   },
   devtool: 'source-map',
   output: {
@@ -49,7 +50,8 @@ module.exports = {
           {
             loader: require.resolve( '../../lib' ),
             options: {
-              checkEntry: true
+              checkEntry: true,
+              cssChunks: [ 'vendor' ]
             }
           }
         ]
@@ -69,7 +71,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin( 'static/css/' + '[name]' + '.wxss' ),
+    new ExtractTextPlugin( {
+		filename: 'static/css/' + '[name]' + '.wxss',
+		allChunks: false,
+	} ),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       minChunks: function ( module, count ) {
