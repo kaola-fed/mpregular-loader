@@ -18,6 +18,7 @@
     "file-loader": "^1.1.11",
     "less": "^3.0.1",
     "less-loader": "^4.1.0",
+    "mpregular": "^0.0.28",
     "style-loader": "^0.20.3",
     "url-loader": "^1.0.1",
     "webpack": "3"

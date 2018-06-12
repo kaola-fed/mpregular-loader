@@ -1976,6 +1976,10 @@ mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
+mpregular@^0.0.28:
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/mpregular/-/mpregular-0.0.28.tgz#a2789f6360c4361f3e7e903a6834b0bed694241d"
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
