@@ -3,7 +3,7 @@
     <ABC class="{ a > 1 } test { b < 1 }"></ABC>
     <div on-click="{ this.onClick('haha') }">{ this.xyz( content, '123' ) }</div>
     <div data-x="{ content1 | thumbnail } das { content2 | thumbnail } { content }">{ 'foo' | thumbnail }</div>
-    {#list items as item}
+    {#list items as item by item}
       {#list array as arr}
         <div>{ content | thumbnail: 1 | test }</div>
         <div r-html="{ xyz + 'abc' }"></div>
