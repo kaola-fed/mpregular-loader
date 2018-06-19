@@ -1,12 +1,17 @@
 <template>
+<foo-bar></foo-bar>
 <div>b.rgl</div>
 {#inc this.$body}
 </template>
 
 <script>
-export default {
+  import foobar from './foobar.rgl'
 
-}
+  export default {
+    components: {
+      'foo-bar': foobar,
+    },
+  }
 </script>
 
 <style scoped>
