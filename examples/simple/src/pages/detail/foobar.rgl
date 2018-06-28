@@ -5,3 +5,9 @@
 <script>
   export default {}
 </script>
+
+<style>
+  .foo-bar {
+    color: blue;
+  }
+</style>

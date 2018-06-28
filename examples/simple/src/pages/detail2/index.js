@@ -1,4 +1,4 @@
-import App from '@/src/pages/detail/index.rgl'
+import App from '@/src/pages/detail2/index.rgl'
 
 const app = new App()
 

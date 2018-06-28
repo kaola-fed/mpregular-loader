@@ -1,12 +1,13 @@
 const path = require( 'path' )
 const ExtractTextPlugin = require( 'extract-text-webpack-plugin' )
 const webpack = require( 'webpack' )
+const MPRegularPlugin = require( '../../lib/plugin' )
 
 module.exports = {
   entry: {
     'app': path.resolve( __dirname, 'src/index.js' ),
     'pages/detail/index': path.resolve( __dirname, 'src/pages/detail/index.js' ),
-    'pages/detail/index2': path.resolve( __dirname, 'src/pages/detail/index2.js' ),
+    'pages/detail2/index': path.resolve( __dirname, 'src/pages/detail2/index.js' ),
   },
   devtool: 'source-map',
   output: {
@@ -51,7 +52,6 @@ module.exports = {
             loader: require.resolve( '../../lib' ),
             options: {
               checkEntry: true,
-              cssChunks: [ 'vendor' ]
             }
           }
         ]
@@ -72,9 +72,9 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin( {
-		filename: 'static/css/' + '[name]' + '.wxss',
-		allChunks: false,
-	} ),
+      filename: 'static/css/' + '[name]' + '.wxss',
+      allChunks: false,
+    } ),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       minChunks: function ( module, count ) {
@@ -86,5 +86,8 @@ module.exports = {
         ) || count > 1
       }
     }),
+    new MPRegularPlugin( {
+      cssChunks: [ 'vendor' ]
+    } )
   ]
 }
