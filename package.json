@@ -14,7 +14,7 @@
   "description": "webpack loader for regularjs",
   "main": "lib/index.js",
   "scripts": {
-    "test": "eslint lib --quiet && npm run ava",
+    "test": "eslint lib --quiet",
     "ava": "ava __tests__/**/*.test.js",
     "snapshot": "rm -rf __tests__/__snapshots__ && npm run ava -- -u",
     "lint": "eslint lib --fix --quiet",
