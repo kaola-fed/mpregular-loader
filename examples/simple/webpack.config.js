@@ -8,7 +8,7 @@ module.exports = {
     'app': path.resolve( __dirname, 'src/index.js' ),
     'a/pages/detail/index': path.resolve( __dirname, 'src/a/pages/detail/index.js' ),
     'a/pages/detail2/index': path.resolve( __dirname, 'src/a/pages/detail2/index.js' ),
-    'b/pages/test/index': path.resolve( __dirname, 'src/b/pages/test/index.js' )
+    'b/pages/test/index': path.resolve( __dirname, 'src/b/pages/test/index.js' ),
   },
   devtool: 'source-map',
   output: {

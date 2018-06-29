@@ -12,6 +12,21 @@ export default {
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
-    }
+    },
+    subPackages: [
+      {
+        root: "a",
+        pages: [
+          "pages/detail",
+          "pages/detail2"
+        ]
+      },
+      {
+        root: "b",
+        pages: [
+          "pages/test",
+        ]
+      }
+    ]
   }
 }
