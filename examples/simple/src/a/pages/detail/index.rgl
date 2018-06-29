@@ -25,7 +25,7 @@
 </template>
 
 <script>
-  import A from '@/src/pages/detail/a.rgl'
+  import A from '@/src/a/pages/detail/a.rgl'
   import B from './b.rgl'
   import Regular from 'regularjs'
 

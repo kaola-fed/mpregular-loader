@@ -6,8 +6,9 @@ const MPRegularPlugin = require( '../../lib/plugin' )
 module.exports = {
   entry: {
     'app': path.resolve( __dirname, 'src/index.js' ),
-    'pages/detail/index': path.resolve( __dirname, 'src/pages/detail/index.js' ),
-    'pages/detail2/index': path.resolve( __dirname, 'src/pages/detail2/index.js' ),
+    'a/pages/detail/index': path.resolve( __dirname, 'src/a/pages/detail/index.js' ),
+    'a/pages/detail2/index': path.resolve( __dirname, 'src/a/pages/detail2/index.js' ),
+    'b/pages/test/index': path.resolve( __dirname, 'src/b/pages/test/index.js' )
   },
   devtool: 'source-map',
   output: {
