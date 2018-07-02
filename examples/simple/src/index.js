@@ -21,12 +21,12 @@ export default {
           "pages/detail2"
         ]
       },
-      {
-        root: "b",
-        pages: [
-          "pages/test",
-        ]
-      }
+      // {
+      //   root: "b",
+      //   pages: [
+      //     "pages/test",
+      //   ]
+      // }
     ]
   }
 }
