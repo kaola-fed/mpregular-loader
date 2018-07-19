@@ -1,4 +1,6 @@
 .DS_Store
+.idea/
+package-lock.json
 node_modules
 npm-debug.log
 /__tests__/dist
