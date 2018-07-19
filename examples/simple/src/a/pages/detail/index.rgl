@@ -1,8 +1,8 @@
 <template>
   <div>
-    <ABC class="{ a > 1 } test { b < 1 }"></ABC>
+    <foo-bar class="{ a > 1 } test { b < 1 }"></foo-bar>
     <div on-click="{ this.onClick('haha') }">{ this.xyz( content, '123' ) }</div>
-    <div data-x="{ content1 | thumbnail } das { content2 | thumbnail } { content }">{ 'foo' | thumbnail }</div>
+    <div on-click="{ content1 = !content1 }" data-x="{ content1 | thumbnail } das { content2 | thumbnail } { content }">{ 'foo' | thumbnail }</div>
     {#list items as item by item}
       {#list array as arr}
         <div>{ content | thumbnail: 1 | test }</div>
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-  import A from '@/src/pages/detail/a.rgl'
+  import A from '@/src/a/pages/detail/a.rgl'
   import B from './b.rgl'
   import Regular from 'regularjs'
 
@@ -38,7 +38,7 @@
 
   App.component( 'A', A )
   App.component( 'B', B )
-  App.component( 'ABC', B )
+  App.component( 'foo-bar', B )
 
   App.filtr( 'thumbnail', ( v ) => {
     return v + '?thumbnail'

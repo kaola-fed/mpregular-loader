@@ -1,0 +1,16 @@
+<template>
+  <foo-bar></foo-bar>
+</template>
+
+<script>
+  import foobar from '../detail/foobar.rgl'
+
+  export default {
+    components: {
+      'foo-bar': foobar,
+    },
+  }
+</script>
+
+<style scoped>
+</style>
