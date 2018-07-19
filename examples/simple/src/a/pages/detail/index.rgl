@@ -56,12 +56,13 @@
     font-size: 19px;
 
     .b {
+      display: flex;
       color: #ddd;
     }
   }
 </style>
 
-<style>
+<style scoped>
   div {
     color: blue;
     display: flex;
