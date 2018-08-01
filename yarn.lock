@@ -4302,12 +4302,13 @@ mixin-deep@^1.2.0:
   dependencies:
     minimist "0.0.8"
 
-mpregular-template-compiler@0.0.32:
-  version "0.0.32"
-  resolved "https://registry.yarnpkg.com/mpregular-template-compiler/-/mpregular-template-compiler-0.0.32.tgz#4f55fa0deacb4b8dbc1cd019735ed959c80eeab2"
+mpregular-template-compiler@0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/mpregular-template-compiler/-/mpregular-template-compiler-0.1.1.tgz#14320964bad8569411a45dc8b58d90cd1f7e3d26"
   dependencies:
     lodash.clonedeep "^4.5.0"
     nanoid "^1.0.2"
+    prettier "^1.13.4"
 
 ms@2.0.0:
   version "2.0.0"
@@ -5187,6 +5188,10 @@ prettier-eslint@^8.5.0:
     require-relative "^0.8.7"
     typescript "^2.5.1"
     typescript-eslint-parser "^11.0.0"
+
+prettier@^1.13.4:
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.14.0.tgz#847c235522035fd988100f1f43cf20a7d24f9372"
 
 prettier@^1.7.0:
   version "1.12.1"
